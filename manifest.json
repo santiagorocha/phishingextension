@@ -17,7 +17,7 @@
     "browser_action": { 
         "browser_style": true,
         "default_icon": "ap.png",
-        "default_popup": "https://www.virustotal.com/gui/",
+        "default_popup": "virustotal/index.html",
         "default_title": "Antiphishing extension"
     }
 }
