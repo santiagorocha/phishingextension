@@ -7,6 +7,11 @@
         "32": "ap.png",
         "48": "ap.png"
     },
+    "applications": {
+        "gecko": {
+            "strict_min_version": "56.0a1"
+        }
+    },
     "content_scripts": [
         {
             "matches":
@@ -26,8 +31,14 @@
         "default_title": "Antiphishing extension"
         
     },
+    "options_ui": {
+        "page": "options/options.html",
+        "browser_style": true
+    },
     "permissions": [
         "menus",
-        "<all_urls>"
+        "<all_urls>",
+        "proxy",
+        "storage"
     ]
 }
