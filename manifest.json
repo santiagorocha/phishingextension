@@ -1,7 +1,12 @@
 {
     "manifest_version": 2,
-    "name": "Phishing detect extension 2",
+    "name": "Phishing detect extension",
     "version": "1.0",
+    "icons": {
+        "16": "ap.png",
+        "32": "ap.png",
+        "48": "ap.png"
+    },
     "content_scripts": [
         {
             "matches":
@@ -17,7 +22,12 @@
     "browser_action": { 
         "browser_style": true,
         "default_icon": "ap.png",
-        "default_popup": "virustotal/index.html",
+        "default_popup": "https://www.virustotal.com/gui/home/url",
         "default_title": "Antiphishing extension"
-    }
+        
+    },
+    "permissions": [
+        "menus",
+        "<all_urls>"
+    ]
 }
